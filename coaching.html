@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+            body{
+                margin: 0px;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: rgba(255, 192, 203, 0);
+            }
+        
+            h1{
+                color:darkgoldenrod;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Nunito Sans';
+                letter-spacing: 2px;
+                transition: 1s;
+                font-weight: lighter;
+                text-decoration: underline;
+                text-shadow: 0 0 0px goldenrod,
+                              0 0 1000px goldenrod ;
+                text-overflow: clip;
+                text-transform:uppercase;
+            
+            
+            }
+            h1:hover{
+                letter-spacing: 5px;
+                text-decoration-color:white;
+                
+            }
+            li a{
+                color:brown;
+                text-decoration: none;
+                font-family:'Nunito Sans';
+            
+                letter-spacing: 1px;
+                overflow: hidden;
+                transition: 2s;
+                font-weight: 300;
+            }
+            li:hover a{
+                color: rgb(30, 206, 106);
+                letter-spacing: 2px;
+            
+            }
+            li{
+                padding-left: 30px;
+                display: inline;
+                font-size: 20px;
+                margin: 10px;
+            }
+           
+            ul{
+            
+                margin-top: 0px;
+                border: 1px solid white;
+                padding: 10px;
+                border-style: ridge;
+                
+            }
+            .mainheading{
+                background-color: white;
+                padding: 10px;
+                border: 1px solid white;
+                
+            }
+            
+            h2{
+                font-size: 35px;
+                text-align: center;
+                letter-spacing: 2px;
+                margin-top: 0px;
+                font-weight:lighter;
+                text-decoration: underline;
+                color:palevioletred;
+                font-family: 'Nunito Sans';
+                
+                
+            }
+            .section1{
+                border: 1px solid rgba(172, 41, 41, 0.411);
+                padding: 10px;
+                
+                border-left: 0px;
+                border-right: 0px;
+                
+            }
+            p{
+                font-size: 20px;
+                font-weight: 20px;
+                color: brown;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 1px;
+                text-align: center;
+                font-weight: lighter;
+            }
+            summary{
+                font-size: 30px;
+                background-color:white;
+                border: 1px solid black;
+                text-align: left;
+                color: black;
+                transition: 1.5s;
+            }
+            details{
+                font-size: 20px;
+                margin: 10px;
+                background-color:snow;
+               text-align:justify;
+               letter-spacing: 1px;
+               font-family: 'Nunito sans';
+               color: brown;
+                
+            }
+            #section3{
+                border: 3px solid beige;
+                padding: 10px;
+                border-style: ridge;
+            }
+            img:hover{
+                zoom: 50px;
+            }
+            .note{
+                
+                font-size: 20px;
+                font-weight: 10px;
+                color: black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 1px;
+            
+                text-decoration: underline;
+                text-align: center;
+                padding-left: 270px;
+
+            }
+            .sign a{
+            
+                font-family: 'Times New Roman', Times, serif;
+                transition: 1s;
+                text-decoration: none;
+                color:lightsalmon;
+            
+            }
+            .sign:hover{
+                background-color: rgba(245, 245, 245, 0.461);
+                letter-spacing: 4px;
+            }
+            .mainimg{
+                width: 50%;
+                height: 50%;
+            }
+            .container{
+                position: relative;
+            }
+              .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                }
+   
+                    .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    transition: 1s;
+                    background-color: rgba(190, 35, 118, 0.802);
+                    }
+                    .container:hover .overlay{
+                        opacity: 1;
+                    }
+                    .myimg{
+                        width: 20%;
+                        height: 20%;
+                        margin-left: 39%;
+                        margin-top: 30px;
+                        clip-path: circle(39.0% at 50% 50%);
+                        transition: 1s;
+                    
+
+                    }
+                    .myimg:hover{
+                        transform: scale(1.1);
+                        transition: 2s;
+                    
+                        
+                    }
+                    .section4{
+                        background-color: rgba(245, 245, 245, 0.355);
+                        background-repeat: no-repeat;
+                        
+                        margin-top: 20px;
+                        border: 3px solid beige;
+                    }
+                    
+                    .li{
+                                
+                                    display: inline;
+                                    font-size: 20px;
+                                    margin: 10px;
+                                    float: left;
+                                    
+                                
+                    }
+                    .footer{
+                        font-family: 'nunito sans';
+                        text-decoration: none;
+                        color: rgb(226, 166, 15);
+                        font-size: 15px;
+                        flex: auto;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+
+                        
+                    }
+                  footer .fc{
+                        
+                        font-family: 'nunito sans';
+                        text-decoration: none;
+                        color: rgb(226, 166, 15);
+                        font-size: 15px;
+                        flex: auto;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        font-weight:bolder;
+
+                    }
+                    footer li a{
+                        color:brown;
+                text-decoration: none;
+                font-family:'Nunito Sans';
+            
+                letter-spacing: 1px;
+                overflow: hidden;
+                transition: 2s;
+                font-weight: 300;
+
+                    }
+                 footer li:hover a{
+                color: rgb(96, 97, 103);
+                letter-spacing: 2px;
+            
+            }
+                .logo{
+                    
+                    float:right;
+                    background-blend-mode:darken;
+                    margin-top: 0px;
+                    width: 8%;
+                    height: 8%;
+                    transition: 2s;
+                    border: 2px solid black;
+                    animation-name: logo;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    background-color: white;
+
+                    
+                }
+                @keyframes logo{
+                    0%{
+                        margin-top: 10px;
+                        margin-bottom: 0px;
+                    }
+                    25%{
+                        margin-top: 11px;
+                        margin-bottom: 0px;
+                    }
+                    50%{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    75%{
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                    100%{
+                        margin-bottom: 10px;
+                        margin-bottom: 0px;
+                    }
+                    
+                    
+                }
+                summary:hover{
+                    text-shadow: 0 0 10px gold,
+                                0 0 20px gold;
+                    letter-spacing: 2px;
+                    
+
+                }
+                .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+        .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+        .longcontent{
+                font-size: 20px;
+                font-weight: 20px;
+                color:black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 1px;
+                font-weight: lighter;
+                text-align: justify;
+
+            }
+
+            #img1{
+            
+                float: left;
+                width: 20%;
+                height: 2%;
+            }
+            .img2{
+                float: right;
+                background-color: white;
+            }    
+            
+            .img3{
+                float: left;
+                width: 20%;
+                height: 20%;
+                background-color: white;
+            }
+            #form{
+                border: 1px solid whitesmoke;
+                
+                background-color: snow;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                padding: 50px;
+                transition: 3s;
+                display:block;
+            }
+            #form:hover{
+                padding: 100px;
+                background-color: rgba(255, 192, 203, 0.307);
+            }
+            #text{
+                width: 100%;
+                align-items: center;
+                padding: 10px;
+                border: 1px solid greenyellow;
+                
+                border-top: 0px;
+                border-left: 0px;
+                border-right: 0px;
+            }
+            .formcontent{
+                color:rgb(0, 0, 0);
+                font-weight: bolder;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Nunito Sans';
+                letter-spacing: 3px;
+                text-decoration: underline;
+               
+                text-transform:uppercase;
+            }
+            .reg{
+                background-color: rgba(89, 242, 0, 0.576);
+                border-radius: 200px;
+                font-family: 'Nunito sans';
+                font-weight: bolder;
+                font-size: 14px;
+                letter-spacing: 1px;
+                border-bottom: rgba(111, 36, 36, 0.635);
+                transition: 1s;
+
+            }
+            .reg:hover{
+                background-color: rgb(53, 159, 127);
+                border-radius: 0px;
+            }
+            #radio{
+                transform: scale(1.2);
+                transition: 1s;
+            }
+            
+
+            #radio:hover{
+                transform: scale(1.5);
+            }
+        
+
+        </style>
+    </head>
+    <body class="bgimg">
+        <div class="mainheading">
+       <a href="#non3">   <img src="books-png.webp"  alt="" title="HOME" class="logo"></a>
+        <h1> SONI  Coaching Centre</h1>
+        </div>
+        <header>
+        <nav>
+            <ul>
+                <li><a href="coaching.html" title="Home">Home</a></li>
+                <li><a href="#section3" title="Courses">Courses</a></li>
+                <li><a href="NOTES.html" target="_blank" title="Notes">Notes</a></li>
+                <li><a href="#img1" title="About Us">About Us</a></li>
+                <li><a href="#contact" title="Contact Us">Contact Us</a></li>
+                <li><a href="#form" title="Register">Register</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+            <section class="section1">
+                <h2>Welcome</h2>
+                <p>
+                    Hi there!
+                    My name is GURPREET SINGH  and I am very happy to welcome you on board with ours COACHING CENTRE!
+                    You joined thousands of STUDENTS who are already getting their dreams fulfilled by: <br>
+                 <b> GURPREET SINGH </b> <br>
+                    There’s just one more tiny step you need to take to achieve all these amazing things: <br><br>
+                <b>  <span class="sign"><a href="signup.html" target="_blank">SIGN UP</a> </span></b>
+                    
+                </p>
+            
+            </section>
+            <div class="container">
+            <div class="section2">
+                <img src="study.jpg" alt="img" class="mainimg">
+                <div class="overlay">
+                    <div class="text">KNOW MORE</div>
+                </div>
+                
+                <img src="study3.jpg" alt="img">
+
+            
+            
+            </div>
+        </div>
+            <section id="section3">
+                <h2>
+                    Courses
+                </h2>
+                
+                    <b class="note">Note:  &nbsp;Welcome to Admission Portal for ODL Programmes - AUGUST 2022 Admission Cycle.</b>
+
+                
+                <details><summary>Tuitions</summary>
+                    Nowadays, tuition has become indispensable for the new generation. There are many tuition centres in our country. Tuition has also become common among students nowadays. Many of them are attending tuition classes after school.  Some of them have to attend tuition classes every day even during public holidays. I agree that tuition is necessary for students. Tuition is an effective extra coaching for all students. As a tuition class is smaller compare to a class in the school, the tutors can give their students more individual attention. Tutors can also target students’ weaknesses and try to improve their academic performance in school. Normally, students who attend tuition will be able to catch up and have some improvement in their studies. Besides that, the tutors can get more freedom in tuition. Tuition is a necessity to achieve the optimum performance.  It helps students to have a good preparation for the exam. Tutors specifically teacher students on how to score well in exams. Tuition has good track records. It helps students to pass their tests or exams in flying colours.  Students can achieve good results by attending tuition classes. In addition, tuition is essential to balance the students’ studies and recreation. Lastly, students can get many benefits from tuition. Students can deepen or enrich their knowledge about the topics on core subjects.  Tuition also gives extra knowledge that is useful in the future. The students who attend the tuition classes have the edge over the others. In the nutshell, attending tuition classes I necessary to all students. It gives an edge to students who attend the classes.
+
+
+                </details>
+                <details><summary>Playway</summary>
+                  
+            Children are happiest when they are engrossed in play. That can happen in different forms, like playing with toys, playing outdoor games, hide-and-seek or simply by running. Children improve their motor skills, enhance their imagination and creativity by playing.  Playing enhances various aspects of a child’s development such as physical, social, psychological and intellectual skills. Both gross and fine motor skills come under physical development. 
+
+          
+                </details>
+                <details><summary>Admission Centre</summary>
+                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam soluta dolores consequuntur quos voluptatum. Veniam magnam harum vel nisi, qui quisquam repellendus, sit eos repudiandae, pariatur quidem quam enim nemo!
+                </details>
+            </section>
+           
+            <h1>Background of Our Institution(About Us)</h1>
+            <img src="books-png.webp" alt="" id="img1">
+            <p class="longcontent">
+                Institutions are humanly devised structures of rules and norms that shape and constrain individual behavior. All definitions of institutions generally entail that there is a level of persistence and continuity. Laws, rules, social conventions and norms are all examples of institutions. Institutions vary in their level of formality and informality.
+                <br>
+
+                Institutions are a principal object of study in social sciences such as political science, anthropology, economics, and sociology (the latter described by Émile Durkheim as the "science of institutions, their genesis and their functioning"). Primary or meta-institutions are institutions such as the family or money that are broad enough to encompass sets of related institutions. Institutions are also a central concern for law, the formal mechanism for political rule-making and enforcement. Historians study and document the founding, growth, decay and development of institutions as part of political, economic and cultural history.
+                Family: The family is the center of the child's life. The family teaches children cultural values and attitudes about themselves and others – see sociology of the family. Children learn continuously from their environment. Children also become aware of class at a very early age and assign different values to each class accordingly.
+        Religion: Some religion is like an ethnic or cultural category, making it less likely for the individuals to break from religious affiliations and be more socialized in this setting. Parental religious participation is the most influential part of religious socialization—more so than religious peers or religious beliefs.See sociology of religion and civil religion.
+        <br>
+        <br>
+        <img src="books2.png" class="img2" alt="">
+        Peer groups: A peer group is a social group whose members have interests, social positions and age in common. This is where children can escape supervision and learn to form relationships on their own. The influence of the peer group typically peaks during adolescence however peer groups generally only affect short term interests unlike the family which has long term influence.
+        <br>
+        <br>
+        Economic systems: Economic systems dictate "acceptable alternatives for consumption", "social values of consumption alternatives", the "establishment of dominant values", and "the nature of involvement in consumption".
+        <br>
+        <br>
+        Legal systems: Children are pressured from both parents and peers to conform and obey certain laws or norms of the group/community. Parents’ attitudes toward legal systems influence children's views as to what is legally acceptable. For example, children whose parents are continually in jail are more accepting of incarceration. See jurisprudence, philosophy of law, sociology of law. <br>
+        Penal systems: The penal systems acts upon prisoners and the guards. Prison is a separate environment from that of normal society; prisoners and guards form their own communities and create their own social norms. Guards serve as "social control agents" who discipline and provide security. From the view of the prisoners, the communities can be oppressive and domineering, causing feelings of defiance and contempt towards the guards.Because of the change in societies, prisoners experience loneliness, a lack of emotional relationships, a decrease in identity and "lack of security and autonomy".Both the inmates and the guards feel tense, fearful, and defensive, which creates an uneasy atmosphere within the community. See sociology of punishment.
+        <br>
+        <br>
+        
+        Mass media: The mass media are the means for delivering impersonal communications directed to a vast audience. The term media comes from Latin meaning, "middle", suggesting that the media's function is to connect people. The media can teach norms and values by way of representing symbolic reward and punishment for different kinds of behavior. Mass media has enormous effects on our attitudes and behavior, notably in regards to aggression. See media studies.
+        <br>
+        <br>
+        <img src="img3.png" class="img3" alt="">
+        <br>
+        Educational institutions – schools (preschool, primary/elementary, secondary, and post-secondary/higher –see sociology of education)
+        Research community – academia and universities; research institutes – see sociology of science
+        <br>
+        Medicine – hospitals and other health care institutions – see sociology of health and illness,          medical sociology
+        Psychiatric hospitals (history)
+        <br>
+        Military or paramilitary forces – see military sociology
+        Being “blessed” with a strong economy and state of the art educational and social system, Singapore and Germany set benchmarks in today’s international educational market. By creating a healthy environment for a child to learn, SIE has developed a sophisticated pedagogical concept involving and encompassing the total development of each child: spiritually, morally, intellectually, socially, emotionally, and physically.
+            </p>
+        
+        <br>
+        <br>
+        <section id="form">
+       
+       
+            <h1>Register Form</h1>
+           <div class="formcontent"> Name: </div><input type="text" id="text" placeholder="Enter Your Name">
+            <br>
+            <br>
+           <div class="formcontent"> D.O.B: </div><input type="date" id="text">
+            <br>
+            <br>
+         <div class="formcontent">   Phone Number: </div><input type="text" name="" id="text" value="+91-">
+            <br>
+            <br>
+         <div class="formcontent">   Email: </div><input type="email" name="" id="text" placeholder="Enter Your Email">
+            <br>
+            <br>
+         <div class="formcontent">   Gender: </div> &nbsp;<input type="radio" name="gender" id="radio">Male 
+         
+            <input type="radio" name="gender" id="radio">Female
+            
+            <br>
+            <br>
+          <div class="formcontent">  Address:</div> <input type="text" name="" id="text" placeholder="Enter Your Full Adddress">
+            <br>
+            <br>
+          <div class="formcontent">  Upload Photo: </div><input type="file" name="" id="text">
+            <br>
+            <br>
+            <input type="submit" name="" id="text" value="Register" class="reg">
+            <br>
+
+        </section>
+        <section class="section4">
+            <img src="IMG_20220520_140008_345.jpg" class="myimg" alt="cherry">
+            <p>
+             <u>   Website Design: <b>GURPREET SINGH</b> </u> <br> 
+                <br>
+                Being “blessed” with a strong economy and state of the art educational and social system, Singapore and Germany set benchmarks in today’s international educational market. By creating a healthy environment for a child to learn, SIE has developed a sophisticated pedagogical concept involving and encompassing the total development of each child: spiritually, morally, intellectually, socially, emotionally, and physically.
+
+            The pedagogical concept is to be seen as the epitome of education and should be given priority ahead of the chosen curriculum. It is this pedagogical concept that helps a child realize his full potential and beauty in this world. This universal concept  can be used with any curriculum existing in the educational market.
+            </p>
+        </section>
+        </main>
+        
+        <br><br>
+
+
+        <footer> 
+           
+            <ul class="ul">
+                <li class="li"><a href="#">Navigate</a><h3 class="footer"><a href="" class="fc" title="Privacy Policy"> Privacy policy </a> <br>
+                    <a href="" class="fc"title="Overview"> Overview </a><br>
+                    <a href="" class="fc"title="About Us">  About Us </a><br>
+                    <a href="" class="fc"title="Blog"> Blog </a><br>
+                    <a href="" class="fc"title="Our Team"> Our team </a></h3></li>
+                
+                <li class="li"><a href="#">Stay Connected</a><h3 class="footer">
+                    <a href="#" class="fa fa-instagram"></a><a href="" class="fc" title="Instagram">  Instagram </a><br>
+                    <a href="#" class="fa fa-facebook"></a> <a href="" class="fc" title="Facebook">  Facebook </a> <br>
+                    <a href="#" class="fa fa-google"></a> <a href="" class="fc" title="Google"> Google </a><br>
+                    <a href="#" class="fa fa-snapchat-ghost"></a> <a href="" class="fc" title="Snapchat"> Snapchat</a> </h3></li>
+                    
+                
+                <li class="li"><a href="#">Overview</a><h3 class="footer"><a href="" class="fc" title="Careers"> Careers </a> <br>
+                    <a href="" class="fc" title="Press">    Press </a> <br>
+              <a href="" class="fc" title="Terms OF Use">  Terms of Use </a><br>
+              <a href="" class="fc" title="Local Sitemap">  Local Sitemap </a><br>
+              <a href="" class="fc" title="Global Sitemap"> Global Sitemap </a></h3></li>
+            
+                <li class="li"><a href="#">Community</a><h3 class="footer">
+                    <a href="" class="fc" title="Community Central">    Community Central </a><br>
+                    <a href="" class="fc" title="Support"> Support</a> <br>
+                    <a href="" class="fc" title="Help"> Help </a><br>
+                    <a href="" class="fc" title="Manage Account"> Manage Account </a></h3></li>
+                <section id="contact">
+                <li class="li"><a href="#">Contact Us</a><h3 class="footer">Ajit Nagar , near Truck union  <br>
+                  <center>  Malout, Punjab(152107) </center>
+                     
+                    Contact Info : 9876543210<br>
+                <a href="" class="fc" title="Email">    Email: gsrkas101@gmail.com </a></h3></li>
+                </section>
+                <li class="li"><a href="#">Return Policy</a><h3 class="footer"> <a href="" class="fc" title="7 Day Return">7 Days Return </a><br>
+                    <a href="" class="fc" title="Money Refund">     Money Refund </a><br>
+                    <a href="" class="fc" title="Delivery Policy"> Delivery Policy</a></h3></li>
+                <br> <br><br><br><br>
+
+             <center>   <h3 class="footer">&copy; 2022 Copyright Reserved</h3></center>
+             <br>
+                
+            </ul>
+         </footer> 
+         
+    
+    </body>
+</html>

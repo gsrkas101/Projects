@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+        <style>
+             @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+            .myimg{
+                        width: 20%;
+                        height: 20%;
+                        margin-left: 39%;
+                        margin-top: 30px;
+                        clip-path: circle(39.0% at 50% 50%);
+                        transition: 1s;
+                    
+
+                    }
+                    .myimg:hover{
+                        transform: scale(1.1);
+                        transition: 2s;
+                    
+                        
+                    }
+            h1{
+                color:darkgoldenrod;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Nunito Sans';
+                letter-spacing: 2px;
+                transition: 1s;
+                font-weight: lighter;
+                text-decoration: underline;
+                text-shadow: 0 0 0px goldenrod,
+                              0 0 1000px goldenrod ;
+                text-overflow: clip;
+                text-transform:uppercase;
+            
+            
+            }
+            h1:hover{
+                letter-spacing: 5px;
+                text-decoration-color:white;
+                
+            }
+            h2:hover{
+                letter-spacing: 5px;
+                text-decoration-color:white;
+
+            }
+            li a{
+                color:brown;
+                text-decoration: none;
+                font-family:'Nunito Sans';
+            
+                letter-spacing: 1px;
+                overflow: hidden;
+                transition: 2s;
+                font-weight: 300;
+            }
+            li:hover a{
+                color: rgb(30, 206, 106);
+                letter-spacing: 2px;
+            
+            }
+            li{
+                padding-left: 30px;
+                display: inline;
+                font-size: 20px;
+                margin: 10px;
+            }
+           
+            ul{
+            
+                margin-top: 0px;
+                border: 1px solid white;
+                padding: 10px;
+                border-style: ridge;
+                
+            }
+            h2{
+                color:darkgoldenrod;
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Nunito Sans';
+                letter-spacing: 2px;
+                transition: 1s;
+                font-weight: lighter;
+                text-decoration: underline;
+                text-shadow: 0 0 0px goldenrod,
+                              0 0 1000px goldenrod ;
+                text-overflow: clip;
+                text-transform:uppercase;
+            }
+            .iframe{
+                padding: 20px;
+                
+                flex-wrap: wrap;
+            }
+            @media screen and (max-width: 600px){
+                .iframe{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .iframe2{
+                    padding-left: 90px;
+            }
+            .pdf{
+                padding-left: 30px;
+                border: 1px solid snow;
+                border-style: groove;
+                background-color:rgba(245, 245, 245, 0.355);
+            }
+            .mainheading{
+                background-color: white;
+                padding: 10px;
+                border: 1px solid white;
+                
+            }
+            .logo{
+                    
+                    float:right;
+                    background-blend-mode:darken;
+                    margin-top: 0px;
+                    width: 8%;
+                    height: 8%;
+                    transition: 2s;
+                    border: 2px solid black;
+                    animation-name: logo;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    background-color: white;
+
+                    
+                }
+                @keyframes logo{
+                    0%{
+                        margin-top: 10px;
+                        margin-bottom: 0px;
+                    }
+                    25%{
+                        margin-top: 11px;
+                        margin-bottom: 0px;
+                    }
+                    50%{
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    75%{
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                    100%{
+                        margin-bottom: 10px;
+                        margin-bottom: 0px;
+                    }
+                    
+                    
+                }
+            .footer{
+                        font-family: 'nunito sans';
+                        text-decoration: none;
+                        color: rgb(226, 166, 15);
+                        font-size: 15px;
+                        flex: auto;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+
+                        
+                    }
+                  footer .fc{
+                        
+                        font-family: 'nunito sans';
+                        text-decoration: none;
+                        color: rgb(226, 166, 15);
+                        font-size: 15px;
+                        flex: auto;
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        font-weight:bolder;
+
+                    }
+                    .li{
+                                
+                                display: inline;
+                                font-size: 20px;
+                                margin: 10px;
+                                float: left;
+                            
+                }
+                .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+        .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+                p{
+                font-size: 20px;
+                font-weight: 20px;
+                color: brown;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 1px;
+                text-align: center;
+                font-weight: lighter;
+            }
+                    footer li a{
+                        color:brown;
+                text-decoration: none;
+                font-family:'Nunito Sans';
+            
+                letter-spacing: 1px;
+                overflow: hidden;
+                transition: 2s;
+                font-weight: 300;
+
+                    }
+                 footer li:hover a{
+                color: rgb(96, 97, 103);
+                letter-spacing: 2px;
+            
+            }
+            .section4{
+                        background-color: rgba(245, 245, 245, 0.355);
+                        background-repeat: no-repeat;
+                        
+                        margin-top: 20px;
+                        border: 3px solid beige;
+                    }
+                    
+        </style>
+    </head>
+    <body>
+        <div class="mainheading">
+            <a href="#non3">   <img src="books-png.webp"  alt="" title="HOME" class="logo"></a>
+             <h1> SONI  Coaching Centre</h1>
+             </div>
+             <header>
+             <nav>
+                 <ul>
+                     <li><a href="coaching.html" title="Home">Home</a></li>
+                     <li><a href="coaching.html#section3" title="Courses">Courses</a></li>
+                     <li><a href="NOTES.html" title="Notes">Notes</a></li>
+                     <li><a href="coaching.html#img1" title="About Us">About Us</a></li>
+                     <li><a href="coaching.html#contact" title="Contact Us">Contact Us</a></li>
+                     <li><a href="coaching.html#form" title="Register">Register</a></li>
+                 </ul>
+             </nav>
+             </header>
+        <h2>Notes (Videos)</h2>
+        
+        <div class="iframe">
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="315"  src="https://www.youtube.com/embed/AjgD3CvWzS0" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="315" src="https://www.youtube.com/embed/BbHkJ7AVC5c" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe width="30%" height="315" src="https://www.youtube.com/embed/QEhaApS4IsY" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="iframe2">
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8WaWnhqWwNk" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0-kC2qk8M10" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+        <br>
+     <div class="pdft">   <h2>PDf's To get Started</h2></div>
+        <section>
+            <div class="pdf">
+                &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes2.pdf" width="20%" height="500" frameborder="2"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes3.pdf" width="20%" height="500" frameborder="2"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes4.pdf" width="20%" height="500"frameborder="0"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes5.pdf" width="20%" height="500"frameborder="0"></iframe>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes2.pdf" width="20%" height="500" frameborder="2"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes3.pdf" width="20%" height="500" frameborder="2"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes4.pdf" width="20%" height="500"frameborder="0"></iframe>
+            &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+            <iframe src="notes5.pdf" width="20%" height="500"frameborder="0"></iframe>
+        </div>
+        </section>
+        <section class="section4">
+            <img src="IMG_20220520_140008_345.jpg" class="myimg" alt="cherry">
+            <p>
+             <u>   Website Design: <b>GURPREET SINGH</b> </u> <br> 
+                <br>
+                Being “blessed” with a strong economy and state of the art educational and social system, Singapore and Germany set benchmarks in today’s international educational market. By creating a healthy environment for a child to learn, SIE has developed a sophisticated pedagogical concept involving and encompassing the total development of each child: spiritually, morally, intellectually, socially, emotionally, and physically.
+
+            The pedagogical concept is to be seen as the epitome of education and should be given priority ahead of the chosen curriculum. It is this pedagogical concept that helps a child realize his full potential and beauty in this world. This universal concept  can be used with any curriculum existing in the educational market.
+            </p>
+        </section>
+        
+
+        <footer> 
+           
+            <ul class="ul">
+                <li class="li"><a href="#">Navigate</a><h3 class="footer"><a href="" class="fc" title="Privacy Policy"> Privacy policy </a> <br>
+                    <a href="" class="fc"title="Overview"> Overview </a><br>
+                    <a href="" class="fc"title="About Us">  About Us </a><br>
+                    <a href="" class="fc"title="Blog"> Blog </a><br>
+                    <a href="" class="fc"title="Our Team"> Our team </a></h3></li>
+                
+                <li class="li"><a href="#">Stay Connected</a><h3 class="footer">
+                    <a href="#" class="fa fa-instagram"></a><a href="" class="fc" title="Instagram">  Instagram </a><br>
+                    <a href="#" class="fa fa-facebook"></a> <a href="" class="fc" title="Facebook">  Facebook </a> <br>
+                    <a href="#" class="fa fa-google"></a> <a href="" class="fc" title="Google"> Google </a><br>
+                    <a href="#" class="fa fa-snapchat-ghost"></a> <a href="" class="fc" title="Snapchat"> Snapchat</a> </h3></li>
+                    
+                
+                <li class="li"><a href="#">Overview</a><h3 class="footer"><a href="" class="fc" title="Careers"> Careers </a> <br>
+                    <a href="" class="fc" title="Press">    Press </a> <br>
+              <a href="" class="fc" title="Terms OF Use">  Terms of Use </a><br>
+              <a href="" class="fc" title="Local Sitemap">  Local Sitemap </a><br>
+              <a href="" class="fc" title="Global Sitemap"> Global Sitemap </a></h3></li>
+            
+                <li class="li"><a href="#">Community</a><h3 class="footer">
+                    <a href="" class="fc" title="Community Central">    Community Central </a><br>
+                    <a href="" class="fc" title="Support"> Support</a> <br>
+                    <a href="" class="fc" title="Help"> Help </a><br>
+                    <a href="" class="fc" title="Manage Account"> Manage Account </a></h3></li>
+                <section id="contact">
+                <li class="li"><a href="#">Contact Us</a><h3 class="footer">Ajit Nagar , near Truck union  <br>
+                  <center>  Malout, Punjab(152107) </center>
+                     
+                    Contact Info : 9876543210<br>
+                <a href="" class="fc" title="Email">    Email: gsrkas101@gmail.com </a></h3></li>
+                </section>
+                <li class="li"><a href="#">Return Policy</a><h3 class="footer"> <a href="" class="fc" title="7 Day Return">7 Days Return </a><br>
+                    <a href="" class="fc" title="Money Refund">     Money Refund </a><br>
+                    <a href="" class="fc" title="Delivery Policy"> Delivery Policy</a></h3></li>
+                <br> <br><br><br><br>
+
+             <center>   <h3 class="footer">&copy; 2022 Copyright Reserved</h3></center>
+             <br>
+                
+            </ul>
+         </footer> 
+    </body>
+</html>
